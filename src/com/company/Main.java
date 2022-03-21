@@ -22,21 +22,18 @@ public class Main {
         float divide = (float) firstNumber/ (float) secondNumber;
 
         //Расчёт процента firstNumber от secondNumber
-        float percent = (float) firstNumber*100/ (float) secondNumber;
+        float percent = firstNumber%secondNumber;
 
         //Возведение числа firstNumber в степень secondNumber
-        int pow = 1;
-        for (int i = 1; i <= secondNumber; i++) {
-            pow = pow * firstNumber;
-        }
+        int pow = firstNumber^secondNumber;
 
 
-        System.out.println(sum);
-        System.out.println(dif);
-        System.out.println(composition);
-        System.out.println(divide);
-        System.out.println(percent);
-        System.out.println(pow);
+        println(sum);
+        println(dif);
+        println(composition);
+        println(divide);
+        println(percent);
+        println(pow);
 
         //if-then-else, != , >= , <=
         if (firstNumber != secondNumber) {
